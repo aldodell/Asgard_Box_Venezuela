@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "189637095314",
+    "project_id": "asgard-box-venezuela",
+    "storage_bucket": "asgard-box-venezuela.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189637095314:android:26589851e683d236af5b4b",
+        "android_client_info": {
+          "package_name": "com.philosophicas.asgardboxvenezuela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189637095314-6dnstd0vbdak56rbkrsio4ac3qtqk1mp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.philosophicas.asgardboxvenezuela",
+            "certificate_hash": "77850aa87a943aafc246fb5b45421a1d4f1833bf"
+          }
+        },
+        {
+          "client_id": "189637095314-cla3qj1lqi9a9ajlqd376im2smuehtdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHx5N4-FzchEiyFyFMMbvaohg5H3nLQ1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189637095314-cla3qj1lqi9a9ajlqd376im2smuehtdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

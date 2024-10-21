@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.philosophicas.asgardboxvenezuela.navigations.Navigation
 import com.philosophicas.asgardboxvenezuela.ui.theme.AsgardBoxVenezuelaTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,14 +20,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AsgardBoxVenezuelaTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            val navController = rememberNavController()
+            Navigation(navController)
+
         }
     }
 }
