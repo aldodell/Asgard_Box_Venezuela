@@ -61,6 +61,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.play.services.fido)
+    implementation(libs.googleid)
     //implementation(libs.androidx.navigation.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -76,5 +78,16 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.play.services.auth)
     implementation(libs.kotlinx.coroutines.android)
+
+
+
+    val credentials = "1.2.2"
+    val identity = "1.1.0"
+
+    implementation ("androidx.credentials:credentials:${credentials}")
+    implementation ("androidx.credentials:credentials-play-services-auth:${credentials}")
+    implementation ("com.google.android.libraries.identity.googleid:googleid:${identity}")
+
+    
 
 }

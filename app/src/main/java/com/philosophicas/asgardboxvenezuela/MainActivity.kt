@@ -12,33 +12,26 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
+import com.philosophicas.asgardboxvenezuela.auth.AuthManager
 import com.philosophicas.asgardboxvenezuela.navigations.Navigation
 import com.philosophicas.asgardboxvenezuela.ui.theme.AsgardBoxVenezuelaTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        System.setProperty("kotlinx.coroutines.debug", "on")
+
         enableEdgeToEdge()
         setContent {
-            val navController = rememberNavController()
-            Navigation(navController)
+            AsgardBoxVenezuelaTheme(darkTheme = false, dynamicColor = false)
+            {
+                val navController = rememberNavController()
+                Navigation(navController)
+            }
 
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AsgardBoxVenezuelaTheme {
-        Greeting("Android")
-    }
-}
